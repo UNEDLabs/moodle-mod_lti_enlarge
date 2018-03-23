@@ -32,7 +32,7 @@ function ltisource_sarlab_get_shortcuts($defaultitem) {
     $type = new stdClass();
     $type->title = get_string('addsarlab', 'ltisource_sarlab');
     $type->name = get_string('modsarlabname', 'ltisource_sarlab');
-    $type->link = $defaultitem->link;
+    $type->link = $type->link = new moodle_url($defaultitem->link, ['type' => 'sarlab']);
     $type->icon = $defaultitem->icon;
     $type->help = get_string('addsarlab_help', 'ltisource_sarlab');
     $type->archetype = $defaultitem->archetype;
