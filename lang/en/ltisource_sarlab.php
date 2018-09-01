@@ -47,3 +47,9 @@ $string['sarlabdesigner'] = 'Sarlab designer';
 $string['sarlabdesigner_desc'] = 'Sarlab designers can create, delete, edit and use Sarlab experiences';
 $string['sarlabmanager'] = 'Sarlab manager';
 $string['sarlabmanager_desc'] = 'Sarlab managers can edit and use existing Sarlab experiences';
+
+// Privacy
+$string['privacy:metadata:lti_client'] = 'In order to integrate with Sarlab\'s LTI service, user data needs to be exchanged with that service.';
+$string['privacy:metadata:lti_client:userid'] = 'The userid is sent from Moodle to allow you to access your data on Sarlab.';
+$string['privacy:metadata:lti_client:fullname'] = 'Your full name is sent to Sarlab to allow a better user experience.';
+$string['privacy:metadata:lti_client:role'] = 'Your course role is sent to Sarlab to enable/disable possibilities according to your permissions.';

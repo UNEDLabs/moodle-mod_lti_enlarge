@@ -47,3 +47,9 @@ $string['sarlabdesigner'] = 'Diseñador Sarlab';
 $string['sarlabdesigner_desc'] = 'Los diseñadores Sarlab pueden crear, borrar, editar y usar experiencias Sarlab';
 $string['sarlabmanager'] = 'Gestor Sarlab';
 $string['sarlabmanager_desc'] = 'Los gestores Sarlab pueden editar y usar experiencias Sarlab';
+
+// Privacy
+$string['privacy:metadata:lti_client'] = 'Para integrarse con el servicio LTI de Sarlab, es necesario intercambiar datos de usuarios con dicho servicio.';
+$string['privacy:metadata:lti_client:userid'] = 'El userid se manda desde Moodle para permitirte acceder a tus datos en Sarlab.';
+$string['privacy:metadata:lti_client:fullname'] = 'Tu nombre completo se envia a Sarlab para permitir una mejor experiencia de usuario.';
+$string['privacy:metadata:lti_client:role'] = 'Tu rol de usuario en el curso se envia a Sarlab para habilitar/deshabilitar opciones de acuerdo a tus permisos.';
