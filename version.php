@@ -31,6 +31,6 @@
 defined('MOODLE_INTERNAL') || die;
 
 $plugin->version   = 2017102000;    // The current module version (Date: YYYYMMDDXX).
-$plugin->requires  = 2016112900;    // Requires this Moodle version.
+$plugin->requires  = 2016052300;    // Requires this Moodle version.
 $plugin->component = 'ltisource_sarlab';     // Full name of the plugin (used for diagnostics).
 $plugin->cron      = 0;
