@@ -44,7 +44,7 @@ $string['sarlab:createexp'] = 'Create and delete Sarlab experiences';
 
 // Strings for new roles.
 $string['sarlabdesigner'] = 'Sarlab designer';
-$string['sarlabdesigner_desc'] = 'Sarlab designers can create, delete, edit and use Sarlab experiences';
+$string['sarlabdesigner_desc'] = 'Sarlab designers can create, delete, edit and use Sarlab experiences, as well as assign manager users';
 $string['sarlabmanager'] = 'Sarlab manager';
 $string['sarlabmanager_desc'] = 'Sarlab managers can edit and use existing Sarlab experiences';
 
