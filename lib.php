@@ -49,9 +49,9 @@ function ltisource_sarlab_before_launch() {
 
     $context = context_system::instance();
 
-    if (has_capability('ltisource/sarlab:createexp', $context, $USER)) {
+    if (has_capability('ltisource/sarlab:createexp', $context, $USER, false)) {
         $role = 'Designer';
-    } else if (has_capability('ltisource/sarlab:editexp', $context, $USER)) {
+    } else if (has_capability('ltisource/sarlab:editexp', $context, $USER, false)) {
         $role = 'Manager';
     } else {
         $role = 'Unauthorized';
