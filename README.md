@@ -3,6 +3,7 @@
 This plugin is an LTI subplugin that simplifies and enhances the connection with Sarlab 8.0.
 
 Sarlab is a system for managing remote laboratory resources. More information about Sarlab can be found here: 
+http://sarlabirs.dia.uned.es
 
 ## 2. License
 
