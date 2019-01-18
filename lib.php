@@ -57,7 +57,7 @@ function ltisource_sarlab_before_launch() {
         $role = 'Unauthorized';
     }
 
-    $params = array('roles' => $role);
+    $params = array('roles' => $role, 'oauth_consumer_key' => get_config('mod_ejsapp', 'server_id'));
 
     return $params;
 }
