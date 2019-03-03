@@ -27,7 +27,7 @@ Moodle installation directory.
 
 ## 4. Dependencies
 
-This plugin is used for providing direct connection to Sarlab from Moodle. You can register in Sarlab here: http://sarlabirs.dia.uned.es
+This plugin is used for providing direct connection to Sarlab from Moodle. You can register in Sarlab here: http://enlargeirs.dia.uned.es
 
 ## 5. Authors
 
