@@ -37,38 +37,38 @@ function xmldb_ltisource_sarlab_install() {
     $context = context_system::instance();
 
     // Create the sarlab experiences designer role.
-    if (!$DB->record_exists('role', array('shortname' => 'sarlabdesigner'))) {
-        $sarlabdesignerid = create_role(get_string('sarlabdesigner', 'ltisource_sarlab'),
-            'sarlabdesigner', get_string('sarlabdesigner_desc', 'ltisource_sarlab'));
-        set_role_contextlevels($sarlabdesignerid, array(CONTEXT_SYSTEM));
+    if (!$DB->record_exists('role', array('shortname' => 'enlargedesigner'))) {
+        $enlargedesignerid = create_role(get_string('enlargedesigner', 'ltisource_sarlab'),
+            'enlargedesigner', get_string('enlargedesigner_desc', 'ltisource_sarlab'));
+        set_role_contextlevels($enlargedesignerid, array(CONTEXT_SYSTEM));
         // Assign capabilities.
-        assign_capability('ltisource/sarlab:addinstance', CAP_ALLOW, $sarlabdesignerid, $context->id, true);
-        assign_capability('ltisource/sarlab:view', CAP_ALLOW, $sarlabdesignerid, $context->id, true);
-        assign_capability('ltisource/sarlab:useexp', CAP_ALLOW, $sarlabdesignerid, $context->id, true);
-        assign_capability('ltisource/sarlab:editexp', CAP_ALLOW, $sarlabdesignerid, $context->id, true);
-        assign_capability('ltisource/sarlab:createexp', CAP_ALLOW, $sarlabdesignerid, $context->id, true);
+        assign_capability('ltisource/sarlab:addinstance', CAP_ALLOW, $enlargedesignerid, $context->id, true);
+        assign_capability('ltisource/sarlab:view', CAP_ALLOW, $enlargedesignerid, $context->id, true);
+        assign_capability('ltisource/sarlab:useexp', CAP_ALLOW, $enlargedesignerid, $context->id, true);
+        assign_capability('ltisource/sarlab:editexp', CAP_ALLOW, $enlargedesignerid, $context->id, true);
+        assign_capability('ltisource/sarlab:createexp', CAP_ALLOW, $enlargedesignerid, $context->id, true);
         // Assign capabilities for the Remlab Manager block if installed.
         if ($DB->record_exists('block', array('name' => 'remlab_manager'))) {
-            assign_capability('block/remlab_manager:myaddinstance', CAP_ALLOW, $sarlabdesignerid, $context->id, true);
-            assign_capability('block/remlab_manager:addinstance', CAP_ALLOW, $sarlabdesignerid, $context->id, true);
-            assign_capability('block/remlab_manager:view', CAP_ALLOW, $sarlabdesignerid, $context->id, true);
+            assign_capability('block/remlab_manager:myaddinstance', CAP_ALLOW, $enlargedesignerid, $context->id, true);
+            assign_capability('block/remlab_manager:addinstance', CAP_ALLOW, $enlargedesignerid, $context->id, true);
+            assign_capability('block/remlab_manager:view', CAP_ALLOW, $enlargedesignerid, $context->id, true);
         }
     }
 
     // Create the sarlab experiences manager role.
-    if (!$DB->record_exists('role', array('shortname' => 'sarlabmanager'))) {
-        $sarlabmanagerid = create_role(get_string('sarlabmanager', 'ltisource_sarlab'),
-            'sarlabmanager', get_string('sarlabmanager_desc', 'ltisource_sarlab'));
-        set_role_contextlevels($sarlabmanagerid, array(CONTEXT_SYSTEM));
+    if (!$DB->record_exists('role', array('shortname' => 'enlargemanager'))) {
+        $enlargemanagerid = create_role(get_string('enlargemanager', 'ltisource_sarlab'),
+            'enlargemanager', get_string('enlargemanager_desc', 'ltisource_sarlab'));
+        set_role_contextlevels($enlargemanagerid, array(CONTEXT_SYSTEM));
         // Assign capabilities.
-        assign_capability('ltisource/sarlab:view', CAP_ALLOW, $sarlabmanagerid, $context->id, true);
-        assign_capability('ltisource/sarlab:useexp', CAP_ALLOW, $sarlabmanagerid, $context->id, true);
-        assign_capability('ltisource/sarlab:editexp', CAP_ALLOW, $sarlabmanagerid, $context->id, true);
+        assign_capability('ltisource/sarlab:view', CAP_ALLOW, $enlargemanagerid, $context->id, true);
+        assign_capability('ltisource/sarlab:useexp', CAP_ALLOW, $enlargemanagerid, $context->id, true);
+        assign_capability('ltisource/sarlab:editexp', CAP_ALLOW, $enlargemanagerid, $context->id, true);
         // Assign capabilities for the Remlab Manager block if installed.
         if ($DB->record_exists('block', array('name' => 'remlab_manager'))) {
-            assign_capability('block/remlab_manager:myaddinstance', CAP_ALLOW, $sarlabmanagerid, $context->id, true);
-            assign_capability('block/remlab_manager:addinstance', CAP_ALLOW, $sarlabmanagerid, $context->id, true);
-            assign_capability('block/remlab_manager:view', CAP_ALLOW, $sarlabmanagerid, $context->id, true);
+            assign_capability('block/remlab_manager:myaddinstance', CAP_ALLOW, $enlargemanagerid, $context->id, true);
+            assign_capability('block/remlab_manager:addinstance', CAP_ALLOW, $enlargemanagerid, $context->id, true);
+            assign_capability('block/remlab_manager:view', CAP_ALLOW, $enlargemanagerid, $context->id, true);
         }
     }
 

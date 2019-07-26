@@ -43,10 +43,10 @@ $string['sarlab:editexp'] = 'Edit existing Sarlab experiences';
 $string['sarlab:createexp'] = 'Create and delete Sarlab experiences';
 
 // Strings for new roles.
-$string['sarlabdesigner'] = 'Sarlab designer';
-$string['sarlabdesigner_desc'] = 'Sarlab designers can create, delete, edit and use Sarlab experiences, as well as assign manager users';
-$string['sarlabmanager'] = 'Sarlab manager';
-$string['sarlabmanager_desc'] = 'Sarlab managers can edit and use existing Sarlab experiences';
+$string['enlargedesigner'] = 'Sarlab designer';
+$string['enlargedesigner_desc'] = 'Sarlab designers can create, delete, edit and use Sarlab experiences, as well as assign manager users';
+$string['enlargemanager'] = 'Sarlab manager';
+$string['enlargemanager_desc'] = 'Sarlab managers can edit and use existing Sarlab experiences';
 
 // Privacy
 $string['privacy:metadata:lti_client'] = 'In order to integrate with Sarlab\'s LTI service, user data needs to be exchanged with that service.';

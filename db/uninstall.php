@@ -36,10 +36,10 @@ defined('MOODLE_INTERNAL') || die;
 function xmldb_ltisource_sarlab_uninstall() {
     global $DB;
 
-    $sarlabmanagerid = $DB->get_field('role', 'id', array('shortname' => 'sarlabmanager'));
-    $sarlabdesignerid = $DB->get_field('role', 'id', array('shortname' => 'sarlabdesigner'));
-    delete_role($sarlabdesignerid);
-    delete_role($sarlabmanagerid);
+    $enlargemanagerid = $DB->get_field('role', 'id', array('shortname' => 'enlargemanager'));
+    $enlargedesignerid = $DB->get_field('role', 'id', array('shortname' => 'enlargedesigner'));
+    delete_role($enlargedesignerid);
+    delete_role($enlargemanagerid);
 
     return true;
 }
