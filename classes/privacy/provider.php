@@ -15,19 +15,19 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Sarlab LTI plugin privacy api.
+ * ENLARGE LTI plugin privacy api.
  *
- * @package    mod_lti_sarlab
+ * @package    mod_lti_enlarge
  * @copyright  2018 Luis de la Torre
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-namespace mod_lti_sarlab\privacy;
+namespace mod_lti_enlarge\privacy;
 use core_privacy\local\metadata\collection;
 
 /**
  * Class to indicate what data stores the plugin, how to export it and how to delete it.
  *
- * @package    mod_lti_sarlab
+ * @package    mod_lti_enlarge
  * @copyright  2018 Luis de la Torre
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
