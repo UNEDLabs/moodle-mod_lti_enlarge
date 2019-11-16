@@ -40,8 +40,12 @@ function xmldb_ltisource_enlarge_uninstall() {
         $enlargemanagerid = $DB->get_field('role', 'id', array('shortname' => 'enlargemanager'));
         delete_role($enlargemanagerid);
     } catch (dml_exception $e) {
+    }
+
+    try {
         $enlargedesignerid = $DB->get_field('role', 'id', array('shortname' => 'enlargedesigner'));
         delete_role($enlargedesignerid);
+    } catch (dml_exception $e) {
     }
 
     return true;
