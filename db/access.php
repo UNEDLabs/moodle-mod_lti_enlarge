@@ -42,7 +42,7 @@ $capabilities = array(
     ),
 
     'ltisource/enlarge:view' => array(
-        'captype' => 'write',
+        'captype' => 'read',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
             'enlargedesigner' => CAP_ALLOW,
@@ -51,7 +51,7 @@ $capabilities = array(
     ),
 
     'ltisource/enlarge:useexp' => array(
-        'captype' => 'write',
+        'captype' => 'read',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
             'editingteacher' => CAP_ALLOW,
@@ -75,6 +75,6 @@ $capabilities = array(
         'archetypes' => array(
             'enlargedesigner' => CAP_ALLOW,
         ),
-    )
+    ),
 
 );
