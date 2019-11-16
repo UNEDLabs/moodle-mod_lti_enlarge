@@ -42,7 +42,6 @@ $capabilities = array(
     ),
 
     'ltisource/enlarge:view' => array(
-        'riskbitmask' => RISK_XSS,
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
@@ -52,7 +51,6 @@ $capabilities = array(
     ),
 
     'ltisource/enlarge:useexp' => array(
-        'riskbitmask' => RISK_XSS,
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
@@ -63,7 +61,6 @@ $capabilities = array(
     ),
 
     'ltisource/enlarge:editexp' => array(
-        'riskbitmask' => RISK_XSS,
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
@@ -73,7 +70,6 @@ $capabilities = array(
     ),
 
     'ltisource/enlarge:createexp' => array(
-        'riskbitmask' => RISK_XSS,
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
