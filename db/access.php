@@ -37,6 +37,7 @@ $capabilities = array(
         'captype' => 'write',
         'contextlevel' => CONTEXT_COURSE,
         'archetypes' => array(
+            'enlargedesigner' => CAP_ALLOW,
         ),
     ),
 
@@ -45,6 +46,8 @@ $capabilities = array(
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
+            'enlargedesigner' => CAP_ALLOW,
+            'enlargemanager' => CAP_ALLOW
         ),
     ),
 
@@ -53,7 +56,9 @@ $capabilities = array(
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
-            'editingteacher' => CAP_ALLOW
+            'editingteacher' => CAP_ALLOW,
+            'enlargedesigner' => CAP_ALLOW,
+            'enlargemanager' => CAP_ALLOW
         ),
     ),
 
@@ -62,6 +67,8 @@ $capabilities = array(
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
+            'enlargedesigner' => CAP_ALLOW,
+            'enlargemanager' => CAP_ALLOW
         ),
     ),
 
@@ -70,6 +77,7 @@ $capabilities = array(
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
+            'enlargedesigner' => CAP_ALLOW,
         ),
     )
 

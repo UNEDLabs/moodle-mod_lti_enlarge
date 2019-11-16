@@ -3,7 +3,7 @@
 This plugin is an LTI subplugin that simplifies and enhances the connection with ENLARGE.
 
 ENLARGE is a system for managing remote laboratory resources. More information about ENLARGE can be found here: 
-http://enlargeirs.dia.uned.es
+http://irs.nebsyst.com
 
 ## 2. License
 
@@ -27,7 +27,7 @@ Moodle installation directory.
 
 ## 4. Dependencies
 
-This plugin is used for providing direct connection to ENLARGE from Moodle. You can register in ENLARGE here: http://enlargeirs.dia.uned.es
+This plugin is used for providing direct connection to ENLARGE from Moodle. You can register in ENLARGE here: http://irs.nebsyst.com
 
 ## 5. Authors
 

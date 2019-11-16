@@ -42,11 +42,11 @@ function xmldb_ltisource_enlarge_install() {
             'enlargedesigner', get_string('enlargedesigner_desc', 'ltisource_enlarge'));
         set_role_contextlevels($enlargedesignerid, array(CONTEXT_SYSTEM));
         // Assign capabilities.
-        assign_capability('ltisource/enlarge:addinstance', CAP_ALLOW, $enlargedesignerid, $context->id, true);
+        /*assign_capability('ltisource/enlarge:addinstance', CAP_ALLOW, $enlargedesignerid, $context->id, true);
         assign_capability('ltisource/enlarge:view', CAP_ALLOW, $enlargedesignerid, $context->id, true);
         assign_capability('ltisource/enlarge:useexp', CAP_ALLOW, $enlargedesignerid, $context->id, true);
         assign_capability('ltisource/enlarge:editexp', CAP_ALLOW, $enlargedesignerid, $context->id, true);
-        assign_capability('ltisource/enlarge:createexp', CAP_ALLOW, $enlargedesignerid, $context->id, true);
+        assign_capability('ltisource/enlarge:createexp', CAP_ALLOW, $enlargedesignerid, $context->id, true);*/
         // Assign capabilities for the Remlab Manager block if installed.
         if ($DB->record_exists('block', array('name' => 'remlab_manager'))) {
             assign_capability('block/remlab_manager:myaddinstance', CAP_ALLOW, $enlargedesignerid, $context->id, true);
@@ -61,9 +61,9 @@ function xmldb_ltisource_enlarge_install() {
             'enlargemanager', get_string('enlargemanager_desc', 'ltisource_enlarge'));
         set_role_contextlevels($enlargemanagerid, array(CONTEXT_SYSTEM));
         // Assign capabilities.
-        assign_capability('ltisource/enlarge:view', CAP_ALLOW, $enlargemanagerid, $context->id, true);
+        /*assign_capability('ltisource/enlarge:view', CAP_ALLOW, $enlargemanagerid, $context->id, true);
         assign_capability('ltisource/enlarge:useexp', CAP_ALLOW, $enlargemanagerid, $context->id, true);
-        assign_capability('ltisource/enlarge:editexp', CAP_ALLOW, $enlargemanagerid, $context->id, true);
+        assign_capability('ltisource/enlarge:editexp', CAP_ALLOW, $enlargemanagerid, $context->id, true);*/
         // Assign capabilities for the Remlab Manager block if installed.
         if ($DB->record_exists('block', array('name' => 'remlab_manager'))) {
             assign_capability('block/remlab_manager:myaddinstance', CAP_ALLOW, $enlargemanagerid, $context->id, true);
