@@ -36,10 +36,13 @@ defined('MOODLE_INTERNAL') || die;
 function xmldb_ltisource_enlarge_uninstall() {
     global $DB;
 
-    $enlargemanagerid = $DB->get_field('role', 'id', array('shortname' => 'enlargemanager'));
-    $enlargedesignerid = $DB->get_field('role', 'id', array('shortname' => 'enlargedesigner'));
-    delete_role($enlargedesignerid);
-    delete_role($enlargemanagerid);
+    try {
+        $enlargemanagerid = $DB->get_field('role', 'id', array('shortname' => 'enlargemanager'));
+        delete_role($enlargemanagerid);
+    } catch (dml_exception $e) {
+        $enlargedesignerid = $DB->get_field('role', 'id', array('shortname' => 'enlargedesigner'));
+        delete_role($enlargedesignerid);
+    }
 
     return true;
 }
