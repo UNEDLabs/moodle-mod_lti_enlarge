@@ -33,11 +33,16 @@ defined('MOODLE_INTERNAL') || die();
 $capabilities = array(
 
     'ltisource/enlarge:addinstance' => array(
-        'riskbitmask' => RISK_XSS,
         'captype' => 'write',
         'contextlevel' => CONTEXT_COURSE,
         'archetypes' => array(
-            'enlargedesigner' => CAP_ALLOW,
+        ),
+    ),
+
+    'ltisource/enlarge:createexp' => array(
+        'captype' => 'write',
+        'contextlevel' => CONTEXT_SYSTEM,
+        'archetypes' => array(
         ),
     ),
 
@@ -45,8 +50,6 @@ $capabilities = array(
         'captype' => 'read',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
-            'enlargedesigner' => CAP_ALLOW,
-            'enlargemanager' => CAP_ALLOW
         ),
     ),
 
@@ -55,8 +58,6 @@ $capabilities = array(
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
             'editingteacher' => CAP_ALLOW,
-            'enlargedesigner' => CAP_ALLOW,
-            'enlargemanager' => CAP_ALLOW
         ),
     ),
 
@@ -64,16 +65,6 @@ $capabilities = array(
         'captype' => 'write',
         'contextlevel' => CONTEXT_SYSTEM,
         'archetypes' => array(
-            'enlargedesigner' => CAP_ALLOW,
-            'enlargemanager' => CAP_ALLOW
-        ),
-    ),
-
-    'ltisource/enlarge:createexp' => array(
-        'captype' => 'write',
-        'contextlevel' => CONTEXT_SYSTEM,
-        'archetypes' => array(
-            'enlargedesigner' => CAP_ALLOW,
         ),
     ),
 
