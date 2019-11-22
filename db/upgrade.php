@@ -35,7 +35,52 @@ defined('MOODLE_INTERNAL') || die();
  *
  * @param string $oldversion
  * @return true
+ * @throws coding_exception
+ * @throws dml_exception
  */
 function xmldb_ltisource_enlarge_upgrade($oldversion) {
+    global $DB;
+
+    // Get system context.
+    $context = context_system::instance();
+
+    // Assign capabilities to the myFrontier experiences designer role.
+    if (!$DB->record_exists('role', array('shortname' => 'enlargedesigner'))) {
+        if ($enlargedesignerid = $DB->get_field('role','id',array('shortname' => 'enlargedesigner'))) {
+            // Assign capabilities.
+            if (get_capability_info("ltisource/enlarge:addinstance")) {
+                assign_capability('ltisource/enlarge:addinstance', CAP_ALLOW, $enlargedesignerid, $context->id, true);
+            }
+            if (get_capability_info("ltisource/enlarge:view")) {
+                assign_capability('ltisource/enlarge:view', CAP_ALLOW, $enlargedesignerid, $context->id, true);
+            }
+            if (get_capability_info("ltisource/enlarge:useexp")) {
+                assign_capability('ltisource/enlarge:useexp', CAP_ALLOW, $enlargedesignerid, $context->id, true);
+            }
+            if (get_capability_info("ltisource/enlarge:editexp")) {
+                assign_capability('ltisource/enlarge:editexp', CAP_ALLOW, $enlargedesignerid, $context->id, true);
+            }
+            if (get_capability_info("ltisource/enlarge:createexp")) {
+                assign_capability('ltisource/enlarge:createexp', CAP_ALLOW, $enlargedesignerid, $context->id, true);
+            }
+        }
+    }
+
+    // Assign capabilities to the myFrontier experiences manager role.
+    if (!$DB->record_exists('role', array('shortname' => 'enlargemanager'))) {
+        if ($enlargemanagerid = $DB->get_field('role','id',array('shortname' => 'enlargemanager'))) {
+            // Assign capabilities.
+            if (get_capability_info("ltisource/enlarge:view")) {
+                assign_capability('ltisource/enlarge:view', CAP_ALLOW, $enlargemanagerid, $context->id, true);
+            }
+            if (get_capability_info("ltisource/enlarge:useexp")) {
+                assign_capability('ltisource/enlarge:useexp', CAP_ALLOW, $enlargemanagerid, $context->id, true);
+            }
+            if (get_capability_info("ltisource/enlarge:editexp")) {
+                assign_capability('ltisource/enlarge:editexp', CAP_ALLOW, $enlargemanagerid, $context->id, true);
+            }
+        }
+    }
+
     return true;
 }
