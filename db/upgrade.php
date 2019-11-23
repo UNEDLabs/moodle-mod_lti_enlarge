@@ -39,14 +39,16 @@ defined('MOODLE_INTERNAL') || die();
  * @throws dml_exception
  */
 function xmldb_ltisource_enlarge_upgrade($oldversion) {
-    global $DB;
+    global $DB, $CFG;
+
+    require_once($CFG->libdir .'/accesslib.php');
 
     // Get system context.
     $context = context_system::instance();
 
     // Assign capabilities to the myFrontier experiences designer role.
-    if (!$DB->record_exists('role', array('shortname' => 'enlargedesigner'))) {
-        if ($enlargedesignerid = $DB->get_field('role','id',array('shortname' => 'enlargedesigner'))) {
+    if ($DB->record_exists('role', array('shortname' => 'enlargedesigner'))) {
+        if ($enlargedesignerid = $DB->get_field('role','id', array('shortname' => 'enlargedesigner'))) {
             // Assign capabilities.
             if (get_capability_info("ltisource/enlarge:addinstance")) {
                 assign_capability('ltisource/enlarge:addinstance', CAP_ALLOW, $enlargedesignerid, $context->id, true);
@@ -67,8 +69,8 @@ function xmldb_ltisource_enlarge_upgrade($oldversion) {
     }
 
     // Assign capabilities to the myFrontier experiences manager role.
-    if (!$DB->record_exists('role', array('shortname' => 'enlargemanager'))) {
-        if ($enlargemanagerid = $DB->get_field('role','id',array('shortname' => 'enlargemanager'))) {
+    if ($DB->record_exists('role', array('shortname' => 'enlargemanager'))) {
+        if ($enlargemanagerid = $DB->get_field('role','id', array('shortname' => 'enlargemanager'))) {
             // Assign capabilities.
             if (get_capability_info("ltisource/enlarge:view")) {
                 assign_capability('ltisource/enlarge:view', CAP_ALLOW, $enlargemanagerid, $context->id, true);
