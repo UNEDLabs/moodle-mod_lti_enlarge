@@ -1,6 +1,6 @@
 ## 1. Content
 
-This plugin is an LTI subplugin that simplifies and enhances the connection with ENLARGE.
+This plugin is an LTI subplugin that simplifies and enhances the connection with the ENLARGE myAdministration tool.
 
 ENLARGE is a system for managing remote laboratory resources. More information about ENLARGE can be found here: 
 https://irs.nebsyst.com
@@ -27,8 +27,8 @@ Moodle installation directory.
 
 ## 4. Dependencies
 
-This plugin is used for providing direct connection to ENLARGE from Moodle. You can register in ENLARGE here: 
-https://irs.nebsyst.com
+This plugin is used for providing direct connection to ENLARGE from Moodle. To know more about the ENLARGE system visit
+https://www.nebsyst.com and https://irs.nebsyst.com
 
 ## 5. Authors
 
