@@ -5,7 +5,8 @@ This plugin is an LTI subplugin that simplifies and enhances the connection with
 ENLARGE is a system for managing remote laboratory resources. More information about ENLARGE can be found here: 
 https://www.nebsyst.com and https://irs.nebsyst.com
 
-This plugin will not receive further updates. For more updated versions, contact the authors and/or Nebulous Systems.
+This plugin will not receive further updates. For more updated versions, contact the authors and/or Nebulous Systems
+(contact@nebsyst.com).
 
 ## 2. License
 
